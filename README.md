@@ -14,8 +14,27 @@ This repository is sample Springboot Application on Customer Information
 	- POST 	 : Add customer data
 	- DELETE : Delete customer data based on ID.
 
+**URLs**
 
-**Steps for Creating Springboot Application template using Spring starter Web:**
+- H2 Console : http://localhost:8085/h2-console/
+- ***Get all Customers*** => GET : http://localhost:8085/api/customer    
+- ***Add Customer*** => POST : 	http://localhost:8085/api/customer
+	
+	```json
+	#Request Body
+	{
+ 	  "id": 1,
+   	  "firstName": "FirstNameValue",
+   	  "lastName": "LastNameValue",
+     	  "emailID": "EmailValue"
+	}
+	```
+- ***Delete Customer based on ID*** => DELETE : http://localhost:8085/api/customer/<id>
+- ***Get Customers List based on First Name*** => GET : http://localhost:8085/api/customer<firstName>
+
+	
+******************************************************************************************************************************************************
+**How to Create Springboot Application template using Spring starter Web:**
 
 1) Open "Create new Spring Starter Project" window on STS
 	- Service URL : https://start.spring.io
@@ -43,9 +62,3 @@ Click "Next"
 			- Lombok
 			
 Click "Next" and "Finish"
-
-
-**URLs**
-
-H2 Console : http://localhost:8080/h2-console/
-
