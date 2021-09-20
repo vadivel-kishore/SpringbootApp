@@ -7,7 +7,13 @@ import com.example.application.model.Customer;
 public interface CustomerService {
 
 	List<Customer> getCustomers();
-	Customer addCustomer(Customer customer);
-	void deleteCustomer(Long customerId);
-	
+
+	List<Customer> getCustomerByFirstName(String firstName);
+
+	Customer getCustomerByEmailID(String emailID);
+
+	String addCustomer(Customer customer);
+
+	String deleteCustomerByID(Long customerId);
+
 }
